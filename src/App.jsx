@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import StickyNavbar from './components/header/StickyNavbar'
 import Fade from 'react-reveal/Fade'
+import Bounce from 'react-reveal/Bounce'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,9 +20,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Fade left>
+      <Bounce left>
         <h1>Vite + React</h1>
-      </Fade>      
+      </Bounce>      
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
