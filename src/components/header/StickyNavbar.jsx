@@ -4,8 +4,7 @@ import {
   MobileNav,
   Typography,
   Button,
-  IconButton,
-  Card,
+  IconButton
 } from "@material-tailwind/react";
 import Dropdown from "./Dropdown";
  
@@ -108,7 +107,7 @@ export default function StickyNavbar() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <MobileNav open={openNav} className="hover:border-transparent">
           {navList}
           <div className="flex flex-col items-center gap-x-1">
             <Button fullWidth variant="text" size="sm" className="f-bold text-sm border-black border-2 px-5 border-solid lg:inline-block hover:bg-black hover:text-white hover:border-black">
