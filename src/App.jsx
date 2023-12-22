@@ -3,8 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import StickyNavbar from './components/header/StickyNavbar'
-import Fade from 'react-reveal/Fade'
-import Bounce from 'react-reveal/Bounce'
+import Flip from 'react-reveal/Flip'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,9 +19,11 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Bounce left>
-        <h1>Vite + React</h1>
-      </Bounce>      
+      <h1>
+        <Flip left cascade>
+          Vite + React
+        </Flip>
+      </h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -34,9 +35,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <Fade right>
-        <h1 className="mt-96 mb-20">Vite + React</h1>
-      </Fade> 
+      <h1 className="mt-96 mb-20">
+        <Flip left cascade>
+          Vite + React
+        </Flip>
+      </h1>
     </>
   )
 }
