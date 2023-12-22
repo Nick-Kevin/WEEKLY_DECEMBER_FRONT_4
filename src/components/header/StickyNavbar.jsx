@@ -47,7 +47,7 @@ export default function StickyNavbar() {
   );
  
   return (
-      <Navbar className="sticky top-0 z-50 max-w-full bg-white rounded-none px-8 md:px-24 lg:px-32 py-6">
+      <Navbar className="sticky top-0 z-50 max-w-full bg-green-400 rounded-none px-8 md:px-24 lg:px-32 py-6">
         <div className="flex items-center justify-between text-blue-gray-900">
           <h2 className="text-4xl text-black">Logo</h2>
           <div className="flex items-center ml-32 w-full justify-between gap-4">

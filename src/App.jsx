@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import StickyNavbar from './components/header/StickyNavbar'
+import StickyNavbar2 from './components/header/StickyNavbar2'
 import Flip from 'react-reveal/Flip'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <StickyNavbar/>
+      <StickyNavbar2/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
