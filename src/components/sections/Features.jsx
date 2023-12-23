@@ -34,21 +34,25 @@ function Features () {
                 <div className='lg:w-4/12 lg:pl-5 pt-20 lg:pt-16 gap-y-10 lg:gap-y-14 flex flex-col items-center justify-center'>
                     {
                         features.map((feature, index) => (
-                            <div className="text-start w-32 lg:w-auto">
-                                <div className="flex items-start mb-3 lg:mb-5 w-10/12 lg:w-8/12">
-                                    <img
-                                        src={feature.img}
-                                        className={ index === 2 ? 'w-6 lg:w-9 mt-1' : 'mt-1 w-4 lg:w-6'}
-                                        alt="logo"
-                                    />
-                                    <h5 className="ml-1 lg:ml-2 f-medium text-xs lg:text-lg">{feature.subtitle}</h5>
-                                </div>
-                                <p className="f-regular lg:ml-2 leading-normal text-[8px] text-sm lg:w-11/12">
-                                    When you add work to your <br />
-                                    Slate calendar we automatically 
-                                    calculate useful insights
-                                </p>
-                            </div>
+                            <>
+                                <Fade bottom>
+                                    <div className="text-start w-32 lg:w-auto">
+                                        <div className="flex items-start mb-3 lg:mb-5 w-10/12 lg:w-8/12">
+                                            <img
+                                                src={feature.img}
+                                                className={ index === 2 ? 'w-6 lg:w-9 mt-1' : 'mt-1 w-4 lg:w-6'}
+                                                alt="logo"
+                                            />
+                                            <h5 className="ml-1 lg:ml-2 f-medium text-xs lg:text-lg">{feature.subtitle}</h5>
+                                        </div>
+                                        <p className="f-regular lg:ml-2 leading-normal text-[8px] text-sm lg:w-11/12">
+                                            When you add work to your <br />
+                                            Slate calendar we automatically 
+                                            calculate useful insights
+                                        </p>
+                                    </div>
+                                </Fade>
+                            </>                            
                         ))
                     }
                 </div>
