@@ -26,7 +26,7 @@ function Features () {
                     </p>
                 </Fade>
             </div>
-            <div className='flex flex-col lg:flex-row lg:mx-48'>
+            <div className='flex flex-col lg:flex-row lg:mx-48 lg:mb-56'>
                 <div className="flex justify-center relative">
                     <img src={chat} className="w-7/12 lg:w-11/12" alt="chat bot" />
                     <img src={lineChart} className="absolute h-24 lg:h-64 lg:left-72 top-28 lg:top-[375px]" alt="line chart" />
@@ -45,7 +45,7 @@ function Features () {
                                             />
                                             <h5 className="ml-1 lg:ml-2 f-medium text-xs lg:text-lg">{feature.subtitle}</h5>
                                         </div>
-                                        <p className="f-regular lg:ml-2 leading-normal text-[8px] text-sm lg:w-11/12">
+                                        <p className="f-regular lg:ml-2 leading-normal text-[7px] text-sm lg:w-11/12">
                                             When you add work to your <br />
                                             Slate calendar we automatically 
                                             calculate useful insights
