@@ -23,8 +23,8 @@ function Gallery () {
             </Fade>
             <div className="flex justify-center">
                 <Fade bottom>
-                    <p className="my-3 lg:mt-8 lg:mb-14 leading-relaxed lg:leading-normal f-regular text-xs lg:text-lg w-44 lg:w-[500px]">
-                        We focus on ergonomics and meeting you where you work. 
+                    <p className="my-3 lg:mt-8 lg:mb-14 leading-relaxed lg:leading-normal f-regular text-xs lg:text-lg w-56 lg:w-[500px]">
+                        We focus on ergonomics and meeting you where you work. <br /> 
                         It's only a keystroke away.
                     </p>
                 </Fade>
@@ -34,12 +34,27 @@ function Gallery () {
                     firstDivOnDesktop.map((image, index) => (
                         <>
                             <Bounce left>
-                            <img
-                                src={image}
-                                className="rounded-xl h-60 gallery-shadow"
-                                alt={'card ' + index}
-                            />
+                                <img
+                                    src={image}
+                                    className="rounded-xl h-60 gallery-shadow"
+                                    alt={'card ' + index}
+                                />
                             </Bounce>                            
+                        </>
+                    ))
+                }
+            </div>
+            <div className="flex flex-col items-center lg:hidden gap-y-5 mt-4">
+                {
+                    mobileCards.map((image, index) => (
+                        <>
+                            <Bounce left>
+                                <img
+                                    src={image}
+                                    className="rounded-md h-40 gallery-shadow"
+                                    alt={'card ' + index}
+                                />
+                            </Bounce>
                         </>
                     ))
                 }
