@@ -1,4 +1,4 @@
-import { Fade } from "react-reveal"
+import { Fade, Bounce } from "react-reveal"
 import desktopCard1 from '../../assets/Sections/Gallery/desktop/Card.png'
 import desktopCard2 from '../../assets/Sections/Gallery/desktop/Card-1.png'
 import desktopCard3 from '../../assets/Sections/Gallery/desktop/Card-2.png'
@@ -33,7 +33,13 @@ function Gallery () {
                 {
                     firstDivOnDesktop.map((image, index) => (
                         <>
-                            <img src={image} className="rounded-xl h-60" alt={'card ' + index} />
+                            <Bounce left>
+                            <img
+                                src={image}
+                                className="rounded-xl h-60 gallery-shadow"
+                                alt={'card ' + index}
+                            />
+                            </Bounce>                            
                         </>
                     ))
                 }
