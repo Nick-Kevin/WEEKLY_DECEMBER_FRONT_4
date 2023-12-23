@@ -23,19 +23,24 @@ function Partners () {
                     </p>
                 </Fade>
             </div>
-            <div className="flex justify-center mb-10 gap-x-16">
+            <div className="flex flex-wrap justify-center items-center mt-7 lg:mt-0 gap-y-8 lg:gap-y-0 mb-10 mx-14 gap-x-7 lg:gap-x-16">
                 {
                     partners.map((partner, index) => (
                         <>
                             <Fade left>
                                 <a href="#">
-                                    <img src={partner} className="h-14" alt={'partner logo ' + index} />
+                                    <img src={partner} className={`lg:h-14 ${index === 5 ? 'h-4' : 'h-8'}`} alt={'partner logo ' + index} />
                                 </a>
                             </Fade>
                         </>
                     ))
                 }
             </div>
+            <Fade bottom>
+                <button className='bg-transparent f-medium w-28 lg:w-36 h-10 lg:h-12 gallery-shadow text-xs lg:text-lg hover:bg-white active:underline hover:text-black border-white border-1 my-7 lg:my-10'>
+                    All partners
+                </button>
+            </Fade>
         </div>
     )
 }
