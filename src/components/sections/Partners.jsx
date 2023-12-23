@@ -37,7 +37,7 @@ function Partners () {
                 }
             </div>
             <Fade bottom>
-                <button className='bg-transparent f-medium w-28 lg:w-36 h-10 lg:h-12 gallery-shadow text-xs lg:text-lg hover:bg-white active:underline hover:text-black border-white border-1 my-7 lg:my-10'>
+                <button className='bg-transparent f-medium px-7 lg:px-8 h-10 lg:h-12 gallery-shadow text-xs lg:text-lg hover:bg-white active:underline hover:text-black border-white border-1 my-0 lg:my-4'>
                     All partners
                 </button>
             </Fade>
