@@ -16,9 +16,9 @@ function Head () {
                         freelancers who want a simple way to plan their schedule.
                     </p>
                 </Fade>
-                <div className='flex flex-col lg:flex-row mt-20 mb-8 lg:gap-y-0 lg:gap-x-8'>
-                    <button className='bg-primary f-medium w-40 h-14 hover:border-white hover:border-1 active:underline text-sm'>Try For Free</button>
-                    <button className='bg-transparent f-medium w-40 h-14 text-sm hover:bg-white active:underline hover:text-black border-white border-1'>Learn More</button>
+                <div className='flex flex-col lg:flex-row items-center mt-12 lg:mt-20 mb-8 gap-y-4 lg:gap-y-0 lg:gap-x-8'>
+                    <button className='bg-primary f-medium w-28 lg:w-40 h-10 lg:h-14 text-xs lg:text-md hover:border-white hover:border-1 active:underline text-sm'>Try For Free</button>
+                    <button className='bg-transparent f-medium w-28 lg:w-40 h-10 lg:h-14 text-xs lg:text-md hover:bg-white active:underline hover:text-black border-white border-1'>Learn More</button>
                 </div>                      
             </div>
             <div className="w-full flex justify-center lg:pb-20 relative">
