@@ -10,7 +10,9 @@ function App() {
 
   return (
     <>
-      <StickyNavbar2/>
+      <header className='sticky top-0 z-50'>
+        <StickyNavbar2/>
+      </header>      
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
