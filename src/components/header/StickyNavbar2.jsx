@@ -73,7 +73,7 @@ export default function StickyNavbar2() {
           <div className="flex items-center gap-x-1">
             <Button
               variant="gradient"
-              className="inline-block text-xs lg:text-sm border-white border-1 px-7 lg:px-10 py-2 lg:py-3 hover:bg-white hover:text-black"
+              className="inline-block active:underline text-xs lg:text-sm border-white border-1 px-7 lg:px-10 py-2 lg:py-3 hover:bg-white hover:text-black"
             >
               <span className="f-medium">Login</span>
             </Button>
