@@ -3,6 +3,33 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "Graphik bold";
+  src: url("./assets/Font/Graphik-Bold-Trial.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik medium";
+  src: url("./assets/Font/Graphik-Medium-Trial.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Graphik regular";
+  src: url("./assets/Font/Graphik-Regular-Trial.otf") format("opentype");
+}
+
+.f-bold {
+  font-family: "Graphik bold";
+}
+
+.f-medium {
+  font-family: "Graphik medium";
+}
+
+.f-regular {
+  font-family: "Graphik regular";
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
