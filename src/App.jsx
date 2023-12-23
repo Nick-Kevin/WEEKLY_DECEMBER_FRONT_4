@@ -5,6 +5,7 @@ import Head from './components/sections/Head'
 import Features from './components/sections/Features'
 import Contents from './components/sections/Contents'
 import Gallery from './components/sections/Gallery'
+import Partners from './components/sections/Partners'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Features/>
         <Contents/>
         <Gallery/>
+        <Partners/>
       </main>
     </>
   )
