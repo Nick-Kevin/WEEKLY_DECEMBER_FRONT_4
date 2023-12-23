@@ -1,7 +1,7 @@
 import macbookPro from '../../assets/Sections/Contents/Macbook-Pro.png'
 import boardsNotifications from '../../assets/Sections/Contents/Boards-Notifications.png'
 
-import { Fade } from "react-reveal"
+import { Fade, Bounce } from "react-reveal"
 
 function Contents () {
     const contenues = [
@@ -25,28 +25,32 @@ function Contents () {
             <div className='grid grid-row lg:grid-cols-2 lg:mx-64 lg:mb-8 gap-y-5 lg:gap-y-0 lg:gap-x-7 mt-4 lg:mt-0'>
                 {
                     contenues.map((contenu, index) => (
-                        <div className='flex flex-col mx-14 lg:mx-0 h-80 lg:h-[540px] justify-between bg-white rounded-lg py-6 lg:py-8 px-2 lg:px-5'>
-                            <h4 className='text-black f-medium text-xs lg:text-lg'>
-                                {contenu.title}
-                            </h4>
-                            <div className='flex justify-center'>
-                                <p className='text-second w-36 lg:w-[14.5rem] f-regular text-[8px] lg:text-sm'>
-                                    Ever wondered if you're too reliant 
-                                    on a client for work? Slate helps 
-                                    you identify .
-                                </p>
-                            </div>
-                            <div>
-                                <button className='btn-shadow bg-primary text-xs lg:text-sm px-8 lg:px-10 py-2 lg:py-3'>
-                                    { contenu.btnLabel }
-                                </button>
-                            </div>
-                            <img
-                                src={contenu.image}
-                                className={ index === 1 ? 'mb-[-15px] lg:mb-[-25px] mt-[-18px] lg:mt-[-40px]' : '' }
-                                alt="illustration"
-                            />
-                        </div>
+                        <>
+                            <Bounce left>
+                                <div className='flex flex-col mx-14 lg:mx-0 h-80 lg:h-[540px] justify-between bg-white rounded-lg py-6 lg:py-8 px-2 lg:px-5'>
+                                    <h4 className='text-black f-medium text-xs lg:text-lg'>
+                                        {contenu.title}
+                                    </h4>
+                                    <div className='flex justify-center'>
+                                        <p className='text-second w-36 lg:w-[14.5rem] f-regular text-[8px] lg:text-sm'>
+                                            Ever wondered if you're too reliant 
+                                            on a client for work? Slate helps 
+                                            you identify .
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <button className='btn-shadow bg-primary text-xs lg:text-sm px-8 lg:px-10 py-2 lg:py-3'>
+                                            { contenu.btnLabel }
+                                        </button>
+                                    </div>
+                                    <img
+                                        src={contenu.image}
+                                        className={ index === 1 ? 'mb-[-15px] lg:mb-[-25px] mt-[-18px] lg:mt-[-40px]' : '' }
+                                        alt="illustration"
+                                    />
+                                </div>
+                            </Bounce>
+                        </>                        
                     ))
                 }
             </div>
