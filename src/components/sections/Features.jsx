@@ -45,7 +45,7 @@ function Features () {
                                             />
                                             <h5 className="ml-1 lg:ml-2 f-medium text-xs lg:text-lg">{feature.subtitle}</h5>
                                         </div>
-                                        <p className="f-regular lg:ml-2 leading-normal text-[7px] text-sm lg:w-11/12">
+                                        <p className="f-regular lg:ml-2 leading-normal text-[7px] lg:text-sm lg:w-11/12">
                                             When you add work to your <br />
                                             Slate calendar we automatically 
                                             calculate useful insights
