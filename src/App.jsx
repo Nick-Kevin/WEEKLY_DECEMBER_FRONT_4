@@ -11,7 +11,7 @@ function App() {
       <header className='sticky top-0 z-50'>
         <StickyNavbar2/>
       </header>
-      <main>
+      <main className='text-white'>
         <Head/>
       </main>
     </>
