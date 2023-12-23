@@ -79,4 +79,8 @@ header span {
   #head img {
     max-width: 150% !important;
   }
+
+  #head h1 {
+    font-family: "Graphik regular";
+  }
 }
