@@ -11,7 +11,7 @@ function Head () {
                     </h1>
                 </Fade>
                 <Fade bottom>
-                    <p className='f-regular text-xs leading-normal lg:text-lg w-56 lg:w-5/12 mt-5 lg:mt-8'>
+                    <p className='f-regular text-xs leading-relaxed lg:leading-normal lg:text-lg w-56 lg:w-5/12 mt-5 lg:mt-8'>
                         Most calendars are designed for teams. Slate is designed for 
                         freelancers who want a simple way to plan their schedule.
                     </p>
