@@ -59,6 +59,21 @@ function Gallery () {
                     ))
                 }
             </div>
+            <div className="hidden mt-10 lg:flex justify-center gap-x-8">
+                {
+                    secondDivOnDesktop.map((image, index) => (
+                        <>
+                            <Bounce left>
+                                <img
+                                    src={image}
+                                    className="rounded-xl h-60 gallery-shadow"
+                                    alt={'card ' + index}
+                                />
+                            </Bounce>                            
+                        </>
+                    ))
+                }
+            </div>
         </div>
     )
 }
