@@ -10,10 +10,12 @@ function Head () {
                         Work at the speed of thought
                     </h1>
                 </Fade>
-                <p className='f-regular text-xs leading-normal lg:text-lg w-56 lg:w-5/12 mt-5 lg:mt-8'>
-                    Most calendars are designed for teams. Slate is designed for 
-                    freelancers who want a simple way to plan their schedule.
-                </p>            
+                <Fade top>
+                    <p className='f-regular text-xs leading-normal lg:text-lg w-56 lg:w-5/12 mt-5 lg:mt-8'>
+                        Most calendars are designed for teams. Slate is designed for 
+                        freelancers who want a simple way to plan their schedule.
+                    </p>
+                </Fade>                         
             </div>
             <div className="w-full flex justify-center lg:pb-20 relative">
                 <img src={dashboard} alt="dashboard" />
