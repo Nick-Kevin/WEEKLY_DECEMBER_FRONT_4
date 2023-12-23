@@ -15,6 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --dark: #181818;
+  --primary: #4452FE;
 }
 
 a {
@@ -69,6 +70,10 @@ header span {
 
 .bg-dark {
   background-color: var(--dark);
+}
+
+.bg-primary {
+  background-color: var(--primary);
 }
 
 #shadow {
