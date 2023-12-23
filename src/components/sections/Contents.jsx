@@ -10,7 +10,7 @@ function Contents () {
     ]
 
     return (
-        <>
+        <div className='lg:mb-48'>
             <Fade bottom>
                 <h2 className="mt-40 lg:mt-32 f-regular text-2xl lg:text-5xl">Contents</h2>
             </Fade>
@@ -22,7 +22,7 @@ function Contents () {
                     </p>
                 </Fade>
             </div>
-            <div className='grid grid-row lg:grid-cols-2 lg:mx-64 lg:mb-8 gap-y-5 lg:gap-y-0 lg:gap-x-7 mt-4 lg:mt-0'>
+            <div className='grid grid-row lg:grid-cols-2 lg:mx-64 lg:mb-16 gap-y-5 lg:gap-y-0 lg:gap-x-7 mt-4 lg:mt-0'>
                 {
                     contenues.map((contenu, index) => (
                         <>
@@ -54,7 +54,7 @@ function Contents () {
                     ))
                 }
             </div>
-        </>
+        </div>
     )
 }
 
