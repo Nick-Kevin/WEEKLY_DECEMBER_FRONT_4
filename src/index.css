@@ -70,3 +70,13 @@ header span {
 .bg-dark {
   background-color: var(--dark);
 }
+
+#shadow {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 66.15%);
+}
+
+@media (max-width:768px) {
+  #head img {
+    max-width: 150% !important;
+  }
+}
