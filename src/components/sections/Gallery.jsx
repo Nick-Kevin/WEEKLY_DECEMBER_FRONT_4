@@ -1,6 +1,21 @@
 import { Fade } from "react-reveal"
+import desktopCard1 from '../../assets/Sections/Gallery/desktop/Card.png'
+import desktopCard2 from '../../assets/Sections/Gallery/desktop/Card-1.png'
+import desktopCard3 from '../../assets/Sections/Gallery/desktop/Card-2.png'
+import desktopCard4 from '../../assets/Sections/Gallery/desktop/Card-3.png'
+import desktopCard5 from '../../assets/Sections/Gallery/desktop/Card-4.png'
+import desktopCard6 from '../../assets/Sections/Gallery/desktop/Card-5.png'
+import desktopCard7 from '../../assets/Sections/Gallery/desktop/Card-6.png'
+import mobileCar1 from '../../assets/Sections/Gallery/mobile/Card-1.png'
+import mobileCar2 from '../../assets/Sections/Gallery/mobile/Card-2.png'
+import mobileCar3 from '../../assets/Sections/Gallery/mobile/Card-3.png'
+import mobileCar4 from '../../assets/Sections/Gallery/mobile/Card-4.png'
 
 function Gallery () {
+    const firstDivOnDesktop = [ desktopCard1, desktopCard2, desktopCard3, desktopCard4 ]
+    const mobileCards = [ mobileCar1, mobileCar2, mobileCar3, mobileCar4 ]
+    const secondDivOnDesktop = [ desktopCard5, desktopCard6, desktopCard7 ]
+
     return (
         <div>
             <Fade bottom>
@@ -13,6 +28,15 @@ function Gallery () {
                         It's only a keystroke away.
                     </p>
                 </Fade>
+            </div>
+            <div className="hidden lg:flex justify-center gap-x-8">
+                {
+                    firstDivOnDesktop.map((image, index) => (
+                        <>
+                            <img src={image} className="rounded-xl h-60" alt={'card ' + index} />
+                        </>
+                    ))
+                }
             </div>
         </div>
     )
