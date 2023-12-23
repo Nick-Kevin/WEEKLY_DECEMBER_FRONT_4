@@ -4,6 +4,7 @@ import StickyNavbar2 from './components/header/StickyNavbar2'
 import Head from './components/sections/Head'
 import Features from './components/sections/Features'
 import Contents from './components/sections/Contents'
+import Gallery from './components/sections/Gallery'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
         <Head/>
         <Features/>
         <Contents/>
+        <Gallery/>
       </main>
     </>
   )
