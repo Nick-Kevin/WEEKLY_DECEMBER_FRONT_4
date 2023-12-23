@@ -68,7 +68,7 @@ header span {
   position: relative !important;
 }
 
-.bg-dark {
+.bg-dark, body {
   background-color: var(--dark);
 }
 

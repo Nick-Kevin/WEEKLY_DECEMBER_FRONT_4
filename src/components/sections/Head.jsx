@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade'
 
 function Head () {
     return (
-        <div id="head" className="bg-dark pt-9 lg:pt-20 h-auto">
+        <div id="head" className="pt-9 lg:pt-20 h-auto">
             <div className='flex flex-col items-center'>
                 <Fade bottom>
                     <h1 className='f-medium lg:!leading-[1.07] text-3xl lg:text-7xl w-7/12 lg:w-6/12'>
