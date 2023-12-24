@@ -80,7 +80,7 @@ export default function StickyNavbar2() {
           </div>
           <IconButton
             variant="text"
-            className="w-6 text-inherit !border-none ml-4 sm:ml-12 md:ml-16 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="w-6 text-inherit !border-none active:!border-none hover:!border-none ml-4 sm:ml-12 md:ml-16 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
