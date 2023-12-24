@@ -6,6 +6,7 @@ import Features from './components/sections/Features'
 import Contents from './components/sections/Contents'
 import Gallery from './components/sections/Gallery'
 import Partners from './components/sections/Partners'
+import Testimonials from './components/sections/Testimonials'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Contents/>
         <Gallery/>
         <Partners/>
+        <Testimonials/>
       </main>
     </>
   )
