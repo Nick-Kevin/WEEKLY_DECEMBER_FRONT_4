@@ -65,9 +65,9 @@ export default function StickyNavbar2() {
   );
  
   return (
-    <Navbar className="fixed bg-dark px-4 sm:px-16 lg:px-32 xl:px-[14.5rem] py-4">
+    <Navbar className="fixed bg-dark px-4 sm:px-16 lg:px-32 xl:px-[14.5rem] xxl:px-60 py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <img src={darkLogo} className="w-28 sm:w-44" alt="dark logo" />
+        <img src={darkLogo} className="w-28 sm:w-44 xxl:w-58" alt="dark logo" />
         <div className="hidden lg:block">{navList}</div>
         <div className="flex">
           <div className="flex items-center gap-x-1">
@@ -80,7 +80,7 @@ export default function StickyNavbar2() {
           </div>
           <IconButton
             variant="text"
-            className="w-6 text-inherit !border-none active:!border-none hover:!border-none ml-4 sm:ml-12 md:ml-16 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="w-6 text-inherit !border-none active:!border-none focus:border-none hover:!border-none ml-4 sm:ml-12 md:ml-16 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
