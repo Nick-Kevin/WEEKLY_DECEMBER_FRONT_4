@@ -19,7 +19,7 @@ function Features () {
             </Fade>
             <div className="flex justify-center">
                 <Fade bottom>
-                    <p className="my-4 lg:mt-8 lg:mb-16 leading-relaxed lg:leading-normal f-regular text-xs sm:text-sm md:text-base lg:text-lg w-60 sm:w-8/12 lg:w-5/12">
+                    <p className="my-4 lg:mt-8 lg:mb-16 leading-relaxed lg:leading-normal f-regular text-xs sm:text-base lg:text-lg w-60 sm:w-8/12 lg:w-5/12">
                         Most calendars are designed for teams. 
                         Slate is designed for freelancers who want 
                         a simple way to plan their schedule.
