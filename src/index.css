@@ -97,6 +97,10 @@ header span {
   border: 1px solid #565656
 }
 
+.bg-fonts {
+  background: #343434;
+}
+
 #shadow {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0E0E0E 66.15%);
 }
