@@ -65,7 +65,7 @@ export default function StickyNavbar2() {
   );
  
   return (
-    <Navbar className="bg-blue-400 bg-dark px-4 py-2 lg:px-[14.5rem] lg:py-4">
+    <Navbar className="bg-blue-400 fixed bg-dark px-4 py-2 lg:px-[14.5rem] lg:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
         <img src={darkLogo} className="w-28 lg:w-44" alt="dark logo" />
         <div className="hidden lg:block">{navList}</div>
@@ -80,7 +80,7 @@ export default function StickyNavbar2() {
           </div>
           <IconButton
             variant="text"
-            className="w-6 text-inherit ml-4 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="w-6 text-inherit !border-none ml-4 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
