@@ -29,9 +29,9 @@ function Testimonials () {
     return (
         <div>
             <Bounce bottom>
-                <h2 className="mt-28 lg:mt-40 f-regular text-2xl lg:text-5xl">Testimonials</h2>
+                <h2 className="mt-28 lg:mt-40 f-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Testimonials</h2>
             </Bounce>
-            <div className="grid md:grid-cols-2 md:gap-x-5 mt-10 md:mt-14 mx-12 md:mx-72">
+            <div className="grid md:grid-cols-2 md:gap-x-5 mt-10 md:mt-14 mx-12 sm:mx-32 md:mx-12 lg:mx-48 xl:mx-72">
                 <div className="gap-y-5 hidden md:grid">
                     {
                         firstTestimonials.map((testimonial, index) => (
