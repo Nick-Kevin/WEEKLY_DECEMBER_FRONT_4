@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import StickyNavbar2 from './components/header/StickyNavbar2'
 import Head from './components/sections/Head'
@@ -8,10 +7,9 @@ import Gallery from './components/sections/Gallery'
 import Partners from './components/sections/Partners'
 import Testimonials from './components/sections/Testimonials'
 import Fonts from './components/sections/Fonts'
+import Footer from './components/footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <header className='sticky top-0 z-50'>
@@ -26,6 +24,9 @@ function App() {
         <Testimonials/>
         <Fonts/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </>
   )
 }
