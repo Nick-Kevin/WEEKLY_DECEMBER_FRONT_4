@@ -25,29 +25,31 @@ function Testimonials () {
                     {
                         firstTestimonials.map((testimonial, index) => (
                             <>
-                                <div className="testimonials-border p-8 rounded-lg text-start">
-                                    <div className="flex items-center f-medium text-sm gap-x-5 mb-5">
-                                        <img src={testimonial.avatar} alt="avatar" />
-                                        <div>
-                                            <h6 className="leading-normal"> {testimonial.testimonialName} </h6>
-                                            <h6 className="leading-normal">Designer</h6>
+                                <Fade left>
+                                    <div className="testimonials-border p-8 rounded-lg text-start">
+                                        <div className="flex items-center f-medium text-sm gap-x-5 mb-5">
+                                            <img src={testimonial.avatar} alt="avatar" />
+                                            <div>
+                                                <h6 className="leading-normal"> {testimonial.testimonialName} </h6>
+                                                <h6 className="leading-normal">Designer</h6>
+                                            </div>
                                         </div>
+                                        <p className="f-regular text-sm leading-relaxed mr-8">
+                                            Slate helps you see how many more days 
+                                            you need to work to reach your financial 
+                                            goal for the month and year. Slate helps 
+                                            you see how many more days <br />
+                                            you need to work to reach your financial 
+                                            goal for the month and year.
+                                            {
+                                                index === 0 ?
+                                                    'your financial goal for the month and year.'
+                                                :
+                                                    ''
+                                            }
+                                        </p>
                                     </div>
-                                    <p className="f-regular text-sm leading-relaxed mr-8">
-                                        Slate helps you see how many more days 
-                                        you need to work to reach your financial 
-                                        goal for the month and year. Slate helps 
-                                        you see how many more days <br />
-                                        you need to work to reach your financial 
-                                        goal for the month and year.
-                                        {
-                                            index === 0 ?
-                                                'your financial goal for the month and year.'
-                                            :
-                                                ''
-                                        }
-                                    </p>
-                                </div>
+                                </Fade>
                             </>
                         ))
                     }
@@ -56,23 +58,25 @@ function Testimonials () {
                     {
                         secondTestimonials.map((testimonial) => (
                             <>
-                                <div className="testimonials-border p-8 rounded-lg text-start">
-                                    <div className="flex items-center f-medium text-sm gap-x-5 mb-5">
-                                        <img src={testimonial.avatar} alt="avatar" />
-                                        <div>
-                                            <h6 className="leading-normal"> {testimonial.testimonialName} </h6>
-                                            <h6 className="leading-normal">Designer</h6>
+                                <Fade right>
+                                    <div className="testimonials-border p-8 rounded-lg text-start">
+                                        <div className="flex items-center f-medium text-sm gap-x-5 mb-5">
+                                            <img src={testimonial.avatar} alt="avatar" />
+                                            <div>
+                                                <h6 className="leading-normal"> {testimonial.testimonialName} </h6>
+                                                <h6 className="leading-normal">Designer</h6>
+                                            </div>
                                         </div>
+                                        <p className="f-regular text-sm leading-relaxed mr-8">
+                                            Slate helps you see how many more days 
+                                            you need to work to reach your financial 
+                                            goal for the month and year. Slate helps 
+                                            you see how many more days <br />
+                                            you need to work to reach your financial 
+                                            goal for the month and year.
+                                        </p>
                                     </div>
-                                    <p className="f-regular text-sm leading-relaxed mr-8">
-                                        Slate helps you see how many more days 
-                                        you need to work to reach your financial 
-                                        goal for the month and year. Slate helps 
-                                        you see how many more days <br />
-                                        you need to work to reach your financial 
-                                        goal for the month and year.
-                                    </p>
-                                </div>
+                                </Fade>
                             </>
                         ))
                     }
