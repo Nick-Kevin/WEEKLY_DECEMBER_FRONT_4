@@ -7,6 +7,7 @@ import Contents from './components/sections/Contents'
 import Gallery from './components/sections/Gallery'
 import Partners from './components/sections/Partners'
 import Testimonials from './components/sections/Testimonials'
+import Fonts from './components/sections/Fonts'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
         <Gallery/>
         <Partners/>
         <Testimonials/>
+        <Fonts/>
       </main>
     </>
   )
