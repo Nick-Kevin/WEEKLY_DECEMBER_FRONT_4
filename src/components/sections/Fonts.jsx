@@ -1,4 +1,4 @@
-import { Fade } from "react-reveal"
+import { Fade, Bounce } from "react-reveal"
 import desktopLineChart from '../../assets/Sections/Fonts/desktop/line-chart.png'
 import mobileLineChart from '../../assets/Sections/Fonts/mobile/line-chart.png'
 
@@ -20,7 +20,9 @@ function Fonts () {
                     </div>
                     <div className="flex justify-end items-end">
                         <img src={desktopLineChart} className="hidden lg:block rounded-br-3xl" alt="line chart" />
-                        <img src={mobileLineChart} className="block lg:hidden mt-20" alt="line chart" />
+                        <Bounce left>
+                            <img src={mobileLineChart} className="block lg:hidden mt-20" alt="line chart" />
+                        </Bounce>
                     </div>
                 </div>
             </Fade>
