@@ -65,9 +65,9 @@ export default function StickyNavbar2() {
   );
  
   return (
-    <Navbar className="bg-blue-400 fixed bg-dark px-4 py-2 md:px-16 lg:px-32 xl:px-[14.5rem] md:py-4">
+    <Navbar className="fixed bg-dark px-4 sm:px-16 lg:px-32 xl:px-[14.5rem] py-2 sm:py-4">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <img src={darkLogo} className="w-28 lg:w-44" alt="dark logo" />
+        <img src={darkLogo} className="w-28 sm:w-44" alt="dark logo" />
         <div className="hidden lg:block">{navList}</div>
         <div className="flex">
           <div className="flex items-center gap-x-1">
